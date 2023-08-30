@@ -1,0 +1,527 @@
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
+  \****************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap);
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss (1) ***!
+  \********************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik, serif;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.container {
+  padding: 0 128px;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 0 64px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.h100v {
+  height: 100vh;
+}
+
+.h100p {
+  height: 100%;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs28 {
+  font-size: 28px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom_cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(251, 250, 250, 0.995);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.active {
+  width: 70px;
+  height: 70px;
+  background: rgb(248, 248, 245);
+}
+
+.hero_container {
+  width: 100%;
+  height: 100%;
+  background: #0C0C0C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero_container .header {
+  margin-top: 25px;
+  background: #1A1B1C;
+  width: 50%;
+  height: 60px;
+  border-radius: 90px;
+}
+.hero_container .header .menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero_container .header .menu li a {
+  color: #FAFAFA;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.hero_container .header .menu li a:hover .custom_cursor {
+  transform: scale(6);
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.banner_container {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  background: #0C0C0C;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.banner_container .banner_title {
+  height: 30px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #FAFAFA;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.banner_container .my_name {
+  font-size: 81px;
+  font-weight: 600;
+  color: #FAFAFA;
+}
+.banner_container .my_country {
+  font-size: 19px;
+  font-weight: 400;
+  color: #8c8c8c;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.banner_container .banner_content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #0C0C0C;
+  position: relative;
+}
+.banner_container .banner_content .swiper {
+  position: absolute;
+  width: 430px;
+  height: 568px;
+  top: 0;
+  left: 470px;
+  overflow: hidden;
+  border-radius: 250px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.banner_container .banner_content .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.banner_container .banner_content .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner_container .banner_content .swiper:hover {
+  border-radius: 180px;
+}
+.banner_container .banner_content .my_gmail {
+  position: absolute;
+  left: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: white;
+}
+.banner_container .banner_content .social_link {
+  position: absolute;
+  right: 180px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.banner_container .banner_content .social_link .link {
+  color: #FAFAFA;
+  font-size: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.work_container {
+  background: #0C0C0C;
+  border: 4px solid crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work_container .work_title_subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.work_container .work_title_subtitle .work_title {
+  font-size: 68px;
+  font-weight: 500;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #FAFAFA;
+}
+.work_container .work_title_subtitle .work_subtitle {
+  width: 500px;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #FAFAFA;
+  text-align: center;
+}
+.work_container .wrapper {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 500px;
+  border: 3px solid white;
+}
+.work_container .title {
+  font-size: max(2vw, 24px);
+  line-height: 1.1;
+  padding-bottom: 0.4em;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.work_container .text {
+  font-size: max(1vw, 15px);
+  line-height: 1.4;
+  overflow: hidden;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.work_container .accordions {
+  padding-bottom: 20vh;
+  border: 2px solid chartreuse;
+}
+.work_container .accordion {
+  background: linear-gradient(200deg, rgb(29, 145, 252) 13.57%, rgb(90, 54, 192) 98.38%);
+  width: max(50vw, 280px);
+  padding: 25px 30px 10px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.3);
+}
+.work_container .accordion:nth-child(2) {
+  background: linear-gradient(200deg, rgb(242, 136, 133) 13.57%, rgb(233, 79, 102) 98.38%);
+}
+.work_container .accordion:nth-child(3) {
+  background: linear-gradient(200deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
+}
+.work_container .accordion:nth-child(4) {
+  background: linear-gradient(200deg, #c215d1 13.57%, #9813a1 98.38%);
+}
+.work_container .spacer {
+  height: 70vh;
+}
+@media (max-width: 480px) {
+  .work_container .accordion {
+    padding: 15px 20px 8px;
+  }
+  .work_container .title {
+    font-size: 20px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about_container {
+  width: 100%;
+  height: 100%;
+  background: #0C0C0C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about_container .about_title {
+  font-size: 68px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  color: #FAFAFA;
+  margin: 10px 0;
+}
+.about_container .about_content {
+  padding: 30px 0;
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about_container .about_content .about_subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #bfbfbf;
+}
+.about_container .about_content .about_para {
+  font-size: 20px;
+  font-weight: 500px;
+  color: #bababa;
+}
+.about_container .about_content .about_subpara {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.about_container .about_content .about_learning {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.about_container .skill_content {
+  width: 1000px;
+}
+.about_container .skill_content .skill_title {
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FAFAFA;
+  text-align: start;
+  display: inline-flex;
+}
+.about_container .skill_content .skill_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+.about_container .skill_content .skill_list .skill {
+  width: 400px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: rgb(159, 128, 255) 0px 0px 0.5rem inset;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #8e69fd;
+}
+.about_container .skill_content .skill_list .skill p {
+  padding: 0 30px;
+  border-radius: 100px;
+  width: 390px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: rgb(159, 128, 255) 0px 0px 0.5rem inset;
+  display: flex;
+  align-items: center;
+}
+.about_container .skill_content .skill_list .skill:nth-child(2) {
+  width: 300px;
+}
+.about_container .skill_content .skill_list .skill:nth-child(2) {
+  width: 350px;
+}
+.about_container .skill_content .skill_list .skill:nth-child(3) {
+  width: 280px;
+}
+.about_container .skill_content .skill_list .skill:nth-child(4) {
+  width: 200px;
+}
+.about_container .skill_content .skill_list .skill:nth-child(5) {
+  width: 150px;
+}
