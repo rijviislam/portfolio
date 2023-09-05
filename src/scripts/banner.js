@@ -1,3 +1,4 @@
+new WOW().init();
 AOS.init();
 
 import Typed from 'typed.js';
@@ -16,11 +17,9 @@ var swiper = new Swiper(".mySwiper", {
     effect: "cards",
     grabCursor: true,
     loop: true,
-    autoplay: {
-        delay: 1000, // Set the delay (in milliseconds) between slides
-        disableOnInteraction: false, // Continue autoplay even after user interaction
-    },
+    // autoplay: {
+    //     delay: 1000, // Set the delay (in milliseconds) between slides
+    //     disableOnInteraction: false, // Continue autoplay even after user interaction
+    // },
 });
 
-new WOW().init();
-AOS.init();

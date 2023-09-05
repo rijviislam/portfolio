@@ -32,9 +32,24 @@ gamil.forEach((mail) => {
     });
 })
 
-// var loader = document.querySelector(".preloader");
+var loader = document.querySelector(".preloader");
 
-// window.addEventListener("load", function () {
-//     loader.style.display = "none";
-// }
-// )
+window.addEventListener("load", function () {
+    loader.style.display = "none";
+}
+)
+
+
+// $(document).ready(function () {
+//     $("a").on('click', function (event) {
+//         if (this.hash !== "") {
+//             event.preventDefault();
+//             var hash = this.hash;
+//             $('html, body').animate({
+//                 scrollTop: $(hash).offset().top
+//             }, 800, function () {
+//                 window.location.hash = hash;
+//             });
+//         }
+//     });
+// });

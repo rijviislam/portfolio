@@ -136,14 +136,22 @@ ul li {
                     font-family: $myFont;
                     color: #FAFAFA;
                     border: 1px solid #E1AA80;
+                    transition: 0.5s ease-in-out;
 
                     i {
                         font-size: 20px;
                         transform: rotate(40deg);
+
                     }
 
                     a {
                         color: #FAFAFA;
+                    }
+
+                    &:hover {
+                        transform: translate(3px, 3px);
+                        border-top-right-radius: 30px;
+                        border-bottom-left-radius: 30px;
                     }
                 }
             }

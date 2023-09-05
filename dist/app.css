@@ -190,19 +190,26 @@ html {
 
 .hero_container {
   width: 100%;
-  height: 100%;
+  height: 10vh;
   background: #0C0C0C;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .hero_container .header {
   margin-top: 25px;
+  position: fixed;
+  z-index: 9;
   background: #1A1B1C;
   width: 50%;
   height: 60px;
   border-radius: 90px;
+  background: linear-gradient(-0.1deg, #0C0C0C 35%, rgb(56, 54, 54) 100%);
+  border-bottom: 1px solid rgb(56, 54, 54);
+  border-right: 1px solid rgb(56, 54, 54);
+  border-left: 1px solid rgb(56, 54, 54);
 }
 .hero_container .header .menu {
   width: 100%;
@@ -419,6 +426,7 @@ ul li {
   font-family: "Bricolage Grotesque", sans-serif;
   color: #FAFAFA;
   border: 1px solid #E1AA80;
+  transition: 0.5s ease-in-out;
 }
 .work_container .work_content .work .work_btn_grp .btn i {
   font-size: 20px;
@@ -426,6 +434,11 @@ ul li {
 }
 .work_container .work_content .work .work_btn_grp .btn a {
   color: #FAFAFA;
+}
+.work_container .work_content .work .work_btn_grp .btn:hover {
+  transform: translate(3px, 3px);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 .work_container .work_content .work .work_img_title {
   margin-top: 20px;
@@ -563,4 +576,107 @@ html {
 }
 .about_container .skill_content .skill_list .skill:nth-child(5) {
   width: 150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.contact_container {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  background: #0C0C0C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_container .contact_title {
+  font-size: 68px;
+  font-weight: 500;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #FAFAFA;
+  cursor: text;
+}
+.contact_container .contact_svg {
+  display: flex;
+  flex-direction: column;
+}
+.contact_container .contact_svg svg {
+  color: #8FFBFB;
+}
+.contact_container .contact_subtitle {
+  margin-top: 15px;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #FAFAFA;
+}
+.contact_container .contact_content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.contact_container .contact_content .contact_form form {
+  width: 500px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.contact_container .contact_content .contact_form form input {
+  padding: 20px 20px;
+  background: linear-gradient(10deg, #0C0C0C 35%, #8FFBFB 100%);
+  border: 1px solid #80B5FF;
+  border-radius: 20px;
+  color: #0C0C0C;
+  outline: none;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.contact_container .contact_content .contact_form form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px 20px;
+  background: linear-gradient(10deg, #0C0C0C 35%, #8FFBFB 100%);
+  border: 1px solid #80B5FF;
+  resize: none;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.contact_container .contact_content .contact_form .form_btn a {
+  padding: 15px;
+  margin-top: 20px;
+  display: inline-flex;
+  background: linear-gradient(40deg, #0C0C0C 35%, #8FFBFB 100%);
+  border: 1px solid #80B5FF;
+  border-radius: 20px;
+  color: #8b8b8b;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Bricolage Grotesque", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.contact_container .contact_content .contact_form .form_btn a:hover {
+  transform: translate(3px, 3px);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 16px;
+}
+.contact_container .contact_content .contact_map iframe {
+  filter: invert(90%) hue-rotate(180deg);
+  background: #000;
+  border-radius: 20px;
 }
