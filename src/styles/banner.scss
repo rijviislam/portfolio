@@ -99,8 +99,10 @@ ul li {
             font-weight: 500;
             font-family: $myFont;
             color: #FFFF;
-
-
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            cursor: copy;
         }
 
         .social_link {

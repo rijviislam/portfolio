@@ -33,12 +33,12 @@ ul li {
     }
 
     .contact_svg {
+        width: 500px;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
 
-        svg {
-            color: #8FFBFB;
-        }
     }
 
     .contact_subtitle {
@@ -66,7 +66,7 @@ ul li {
                 input {
                     padding: 20px 20px;
                     background: linear-gradient(10deg, #0C0C0C 35%, #8FFBFB 100%);
-                    border: 1px solid #80B5FF;
+                    border: 1px solid #8FFBFB;
                     border-radius: 20px;
                     color: #0C0C0C;
                     outline: none;

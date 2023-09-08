@@ -1,6 +1,6 @@
 
 const customCursor = document.querySelector(".custom_cursor");
-const interactiveElements = document.querySelectorAll('a, i ');
+const interactiveElements = document.querySelectorAll('a, i');
 const gamil = document.querySelectorAll(".my_gmail");
 
 document.addEventListener("mousemove", (e) => {
@@ -12,6 +12,7 @@ interactiveElements.forEach((element) => {
     element.addEventListener("mouseenter", () => {
         customCursor.style.width = '40px';
         customCursor.style.height = '40px';
+        customCursor.innerHTML = "";
         customCursor.classList.add('active');
     });
     element.addEventListener("mouseleave", () => {
@@ -23,8 +24,11 @@ interactiveElements.forEach((element) => {
 
 gamil.forEach((mail) => {
     mail.addEventListener("mouseenter", () => {
-        customCursor.style.width = "50px";
-        customCursor.style.height = "50px";
+        customCursor.style.width = "70px";
+        customCursor.style.height = "70px";
+        customCursor.innerHTML = "copy";
+        customCursor.style.textAlign = "center";
+        customCursor.style.lineHeight = "30px";
     });
     mail.addEventListener("mouseleave", () => {
         customCursor.style.width = "10px";
@@ -32,24 +36,18 @@ gamil.forEach((mail) => {
     });
 })
 
-var loader = document.querySelector(".preloader");
+// var loader = document.querySelector(".loaderSvgWrapper");
 
-window.addEventListener("load", function () {
-    loader.style.display = "none";
-}
-)
+// window.addEventListener("load", function () {
+//     loader.style.display = "none";
+// }
+// )
 
 
-// $(document).ready(function () {
-//     $("a").on('click', function (event) {
-//         if (this.hash !== "") {
-//             event.preventDefault();
-//             var hash = this.hash;
-//             $('html, body').animate({
-//                 scrollTop: $(hash).offset().top
-//             }, 800, function () {
-//                 window.location.hash = hash;
-//             });
-//         }
-//     });
-// });
+
+
+
+
+
+
+

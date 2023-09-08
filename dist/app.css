@@ -179,15 +179,6 @@ html {
   background: rgb(248, 248, 245);
 }
 
-.preloader {
-  background: #FAFAFA url(images/d8a1b474d02c7bb96b16.gif) no-repeat center center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-
 .hero_container {
   width: 100%;
   height: 10vh;
@@ -317,6 +308,10 @@ ul li {
   font-weight: 500;
   font-family: "Bricolage Grotesque", sans-serif;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: copy;
 }
 .banner_container .banner_content .social_link {
   position: absolute;
@@ -609,11 +604,11 @@ ul li {
   cursor: text;
 }
 .contact_container .contact_svg {
+  width: 500px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-}
-.contact_container .contact_svg svg {
-  color: #8FFBFB;
 }
 .contact_container .contact_subtitle {
   margin-top: 15px;
@@ -637,7 +632,7 @@ ul li {
 .contact_container .contact_content .contact_form form input {
   padding: 20px 20px;
   background: linear-gradient(10deg, #0C0C0C 35%, #8FFBFB 100%);
-  border: 1px solid #80B5FF;
+  border: 1px solid #8FFBFB;
   border-radius: 20px;
   color: #0C0C0C;
   outline: none;
