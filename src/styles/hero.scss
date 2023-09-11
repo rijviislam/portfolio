@@ -35,6 +35,7 @@ html {
     transition: transform 0.2s ease;
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
+    overflow: hidden;
 }
 
 .active {

@@ -17,23 +17,217 @@ a {
   color: initial;
 }
 
-.container {
-  padding: 0 128px;
-}
-
-@media screen and (max-width: 960px) {
-  .container {
-    padding: 0 64px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
-}
 @media screen and (max-width: 576px) {
-  .container {
-    padding: 0 15px;
+  body .hero_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+  }
+  body .hero_container .header {
+    display: none;
+  }
+  body .hero_container .header_small_screen {
+    padding: 0 20px;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .hero_container .header_small_screen .header_small_screen_open_menu_btn {
+    font-size: 38px;
+  }
+  body .hero_container .header_small_screen_menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    list-style: none;
+    z-index: 99;
+    background: linear-gradient(-0.1deg, #0C0C0C 35%, rgb(56, 54, 54) 100%);
+    display: none;
+  }
+  body .hero_container .header_small_screen_menu .header_small_screen_close_menu_btn {
+    padding: 0 20px;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 38px;
+  }
+  body .hero_container .header_small_screen_menu .small_menu {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .hero_container .header_small_screen_menu .small_menu li a {
+    font-size: 20px;
+    color: #FAFAFA;
+  }
+  body .hero_container .header_small_screen_menu_active {
+    display: block;
+  }
+  body .banner_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .banner_container .banner_title {
+    font-size: 18px;
+  }
+  body .banner_container .my_name {
+    font-size: 40px;
+  }
+  body .banner_container .banner_content {
+    width: 100%;
+    height: 550px;
+    position: static;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  body .banner_container .banner_content .my_gmail {
+    position: static;
+  }
+  body .banner_container .banner_content .swiper {
+    position: static;
+    width: 340px;
+    top: 50px;
+    left: 30px;
+    overflow: hidden;
+    border-radius: 250px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  body .banner_container .banner_content .social_link {
+    position: static;
+  }
+  body .about_container {
+    width: 100%;
+  }
+  body .about_container .about_title {
+    font-size: 40px;
+  }
+  body .about_container .about_content {
+    width: 100%;
+    padding: 20px;
+  }
+  body .about_container .skill_content {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .about_container .skill_content .skill_list {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+  body .about_container .skill_content .skill_list .skill {
+    width: 350px;
+    min-width: 100%;
+  }
+  body .about_container .skill_content .skill_list .skill p {
+    width: 300px;
+    min-width: 100%;
+  }
+  body .about_container .skill_content .skill_list .skill:nth-child(2) {
+    min-width: 95%;
+  }
+  body .about_container .skill_content .skill_list .skill:nth-child(3) {
+    min-width: 85%;
+  }
+  body .about_container .skill_content .skill_list .skill:nth-child(4) {
+    min-width: 70%;
+  }
+  body .about_container .skill_content .skill_list .skill:nth-child(5) {
+    min-width: 70%;
+  }
+  body .work_container {
+    width: 100%;
+  }
+  body .work_container .work_title_subtitle .work_title {
+    font-size: 40px;
+  }
+  body .work_container .work_title_subtitle .work_svg svg {
+    width: 100px;
+  }
+  body .work_container .work_title_subtitle .work_subtitle {
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+  }
+  body .work_container .work_content {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  body .work_container .work_content .work {
+    width: 100%;
+    height: 100%;
+  }
+  body .work_container .work_content .work .work_img {
+    width: 100%;
+    height: 100%;
+  }
+  body .work_container .work_content .work .work_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  body .work_container .work_content .work .work_img_title {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  body .contact_container {
+    width: 100%;
+  }
+  body .contact_container .contact_title {
+    font-size: 40px;
+  }
+  body .contact_container .contact_subtitle {
+    width: 100%;
+    text-align: center;
+  }
+  body .contact_container .contact_content {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .contact_container .contact_content .contact_form {
+    width: 100%;
+  }
+  body .contact_container .contact_content .contact_form form input {
+    width: 340px;
+    min-width: 100%;
+  }
+  body .contact_container .contact_content .contact_form form textarea {
+    width: 340px;
+    min-width: 100%;
+  }
+  body .contact_container .contact_content .contact_form .form_btn {
+    width: 100%;
+  }
+  body .contact_container .contact_content .contact_map {
+    padding: 0 10px;
+    width: 100%;
+  }
+  body .contact_container .contact_content .contact_map iframe {
+    width: 100%;
   }
 }
 .text-center {
@@ -171,6 +365,7 @@ html {
   transition: transform 0.2s ease;
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
+  overflow: hidden;
 }
 
 .active {
@@ -341,6 +536,7 @@ ul li {
 }
 
 .work_container {
+  padding-top: 80px;
   max-width: 100%;
   background: #0C0C0C;
   display: flex;
@@ -471,6 +667,7 @@ html {
 }
 
 .about_container {
+  padding-top: 80px;
   width: 100%;
   height: 100%;
   background: #0C0C0C;
@@ -590,7 +787,7 @@ ul li {
 .contact_container {
   width: 100%;
   height: 100%;
-  padding: 40px 0;
+  padding: 80px 0;
   background: #0C0C0C;
   display: flex;
   flex-direction: column;
@@ -651,6 +848,7 @@ ul li {
   font-size: 17px;
   font-weight: 500;
   font-family: "Bricolage Grotesque", sans-serif;
+  outline: none;
 }
 .contact_container .contact_content .contact_form .form_btn a {
   padding: 15px;
