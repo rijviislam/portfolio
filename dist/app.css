@@ -9,16 +9,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Rubik, serif;
 }
 
 a {
   text-decoration: none;
-  color: initial;
 }
 
 @media screen and (max-width: 576px) {
   body .hero_container {
+    min-width: 360px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -73,7 +72,13 @@ a {
   body .hero_container .header_small_screen_menu_active {
     display: block;
   }
+  body .custom_cursor {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
   body .banner_container {
+    min-width: 360px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -109,7 +114,10 @@ a {
   body .banner_container .banner_content .social_link {
     position: static;
   }
+}
+@media screen and (max-width: 576px) {
   body .about_container {
+    min-width: 360px;
     width: 100%;
   }
   body .about_container .about_title {
@@ -131,26 +139,30 @@ a {
     margin-top: 10px;
   }
   body .about_container .skill_content .skill_list .skill {
-    width: 350px;
     min-width: 100%;
   }
   body .about_container .skill_content .skill_list .skill p {
-    width: 300px;
-    min-width: 100%;
+    width: 100%;
+  }
+  body .about_container .skill_content .skill_list .skill:nth-child(1) {
+    width: 95%;
   }
   body .about_container .skill_content .skill_list .skill:nth-child(2) {
-    min-width: 95%;
+    width: 85%;
   }
   body .about_container .skill_content .skill_list .skill:nth-child(3) {
-    min-width: 85%;
+    min-width: 80%;
   }
   body .about_container .skill_content .skill_list .skill:nth-child(4) {
     min-width: 70%;
   }
   body .about_container .skill_content .skill_list .skill:nth-child(5) {
-    min-width: 70%;
+    min-width: 60%;
   }
+}
+@media screen and (max-width: 576px) {
   body .work_container {
+    min-width: 360px;
     width: 100%;
   }
   body .work_container .work_title_subtitle .work_title {
@@ -190,7 +202,10 @@ a {
     padding: 10px;
     font-size: 14px;
   }
+}
+@media screen and (max-width: 576px) {
   body .contact_container {
+    min-width: 360px;
     width: 100%;
   }
   body .contact_container .contact_title {
@@ -209,6 +224,9 @@ a {
     justify-content: center;
   }
   body .contact_container .contact_content .contact_form {
+    width: 100%;
+  }
+  body .contact_container .contact_content .contact_form form {
     width: 100%;
   }
   body .contact_container .contact_content .contact_form form input {
@@ -413,6 +431,12 @@ html {
 .hero_container .header .menu li a:hover .custom_cursor {
   transform: scale(6);
   opacity: 1;
+}
+.hero_container .header_small_screen {
+  display: none;
+}
+.hero_container .header_small_screen_menu {
+  display: none;
 }
 
 * {

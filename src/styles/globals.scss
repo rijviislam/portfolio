@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Rubik, serif;
 }
 
 a {
     text-decoration: none;
-    color: initial;
 }
 
 // @media screen and (max-width: 960px) {
@@ -22,11 +20,11 @@ a {
 //     }
 // }
 
+//   HERO SECTION
 @media screen and (max-width: 576px) {
-
-    //   HERO SECTION
     body {
         .hero_container {
+            min-width: 360px;
             width: 100%;
             height: 100%;
             display: flex;
@@ -92,11 +90,19 @@ a {
                 display: block;
             }
         }
-    }
 
-    // BANNER SECTION
+        .custom_cursor {
+            display: none;
+        }
+    }
+}
+
+// BANNER SECTION
+@media screen and (max-width: 576px) {
     body {
         .banner_container {
+
+            min-width: 360px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -147,11 +153,15 @@ a {
 
         }
     }
+}
 
-    // ABOUT SECTION
+// ABOUT SECTION
+@media screen and (max-width: 576px) {
     body {
         .about_container {
+            min-width: 360px;
             width: 100%;
+
 
             .about_title {
                 font-size: 40px;
@@ -175,20 +185,22 @@ a {
                     margin-top: 10px;
 
                     .skill {
-                        width: 350px;
                         min-width: 100%;
 
                         p {
-                            width: 300px;
-                            min-width: 100%;
+                            width: 100%;
+                        }
+
+                        &:nth-child(1) {
+                            width: 95%;
                         }
 
                         &:nth-child(2) {
-                            min-width: 95%;
+                            width: 85%;
                         }
 
                         &:nth-child(3) {
-                            min-width: 85%;
+                            min-width: 80%;
                         }
 
                         &:nth-child(4) {
@@ -196,7 +208,7 @@ a {
                         }
 
                         &:nth-child(5) {
-                            min-width: 70%;
+                            min-width: 60%;
                         }
 
 
@@ -207,12 +219,15 @@ a {
             }
         }
     }
+}
 
-    // WORK SECTION
-
+// WORK SECTION
+@media screen and (max-width: 576px) {
     body {
         .work_container {
+            min-width: 360px;
             width: 100%;
+
 
             .work_title_subtitle {
                 .work_title {
@@ -269,11 +284,15 @@ a {
             }
         }
     }
+}
 
-    // CONTACT SECTION
+// CONTACT SECTION
+@media screen and (max-width: 576px) {
     body {
         .contact_container {
+            min-width: 360px;
             width: 100%;
+
 
             .contact_title {
                 font-size: 40px;
@@ -296,6 +315,8 @@ a {
                     width: 100%;
 
                     form {
+                        width: 100%;
+
                         input {
                             width: 340px;
                             min-width: 100%;
