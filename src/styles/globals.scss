@@ -5,8 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $myFont;
-
-
 }
 
 a {
@@ -29,7 +27,7 @@ a {
 @media screen and (max-width: 576px) {
     body {
         .hero_container {
-            min-width: 360px;
+            // min-width: 360px;
             width: 100%;
             height: 100%;
             display: flex;
@@ -63,9 +61,10 @@ a {
                 width: 100%;
                 height: 100vh;
                 list-style: none;
-                z-index: 99;
+                z-index: 999999;
                 background: linear-gradient(-0.1deg, #0C0C0C 35%, rgb(56, 54, 54) 100%);
-                display: none;
+                // display: none;
+                overflow-x: hidden;
 
 
                 .header_small_screen_close_menu_btn {
@@ -75,6 +74,7 @@ a {
                     display: flex;
                     justify-content: flex-end;
                     font-size: 38px;
+                    font-family: $myFont;
 
                 }
 
@@ -109,11 +109,12 @@ a {
     body {
         .banner_container {
 
-            min-width: 360px;
+            // min-width: 360px;
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-x: hidden;
 
             .banner_title {
                 font-size: 18px;
@@ -166,9 +167,10 @@ a {
 @media screen and (max-width: 576px) {
     body {
         .about_container {
-            min-width: 360px;
+            // min-width: 360px;
             width: 100%;
 
+            overflow-x: hidden;
 
             .about_title {
                 font-size: 40px;
@@ -232,8 +234,9 @@ a {
 @media screen and (max-width: 576px) {
     body {
         .work_container {
-            min-width: 360px;
+            // min-width: 360px;
             width: 100%;
+            overflow-x: hidden;
 
 
             .work_title_subtitle {
@@ -297,8 +300,9 @@ a {
 @media screen and (max-width: 576px) {
     body {
         .contact_container {
-            min-width: 360px;
+            // min-width: 360px;
             width: 100%;
+            overflow-x: hidden;
 
 
             .contact_title {
