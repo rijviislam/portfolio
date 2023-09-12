@@ -44,18 +44,27 @@ gamil.forEach((mail) => {
 // )
 
 
-const menuOpen = document.querySelector(".header_small_screen_open_menu_btn");
-const menuClose = document.querySelector(".header_small_screen_close_menu_btn");
-const menu = document.querySelector(".header_small_screen_menu");
+document.addEventListener("DOMContentLoaded", () => {
+    const menuOpen = document.querySelector(".header_small_screen_open_menu_btn");
+    const menuClose = document.querySelector(".header_small_screen_close_menu_btn");
+    const menu = document.querySelector(".header_small_screen_menu");
 
-menuOpen.addEventListener("click", () => {
-    menu.classList.add("header_small_screen_menu_active");
-});
-menuClose.addEventListener("click", () => {
-    console.log("rijiv");
-    menu.classList.remove("header_small_screen_menu_active");
-});
+    menuOpen.addEventListener("click", () => {
+        menu.classList.add("header_small_screen_menu_active");
+    });
+    menuClose.addEventListener("click", () => {
+        console.log("rijiv");
+        menu.classList.remove("header_small_screen_menu_active");
+    });
+    const menuItem = document.querySelectorAll(".menu_item");
+    menuItem.forEach((item) => {
+        item.addEventListener("click", () => {
+            menu.classList.remove("header_small_screen_menu_active");
 
+        })
+    })
+
+});
 
 
 
