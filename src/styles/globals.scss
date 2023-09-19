@@ -41,7 +41,7 @@ a {
 
             .header_small_screen {
                 position: fixed;
-                top: 430px;
+                bottom: 20px;
                 padding: 0 20px;
                 width: 90%;
                 height: 60px;
@@ -75,7 +75,7 @@ a {
                 padding: 15px;
                 border-radius: 30px;
                 position: fixed;
-                top: 288px;
+                bottom: 20px;
                 width: 90%;
                 height: 200px;
                 list-style: none;
@@ -93,10 +93,7 @@ a {
                     grid-template-columns: repeat(3, 1fr);
 
                     li {
-                        display: flex;
-                        gap: 5px;
-                        flex-direction: column;
-                        align-items: center;
+
 
                         img {
                             width: 20px;
@@ -105,6 +102,10 @@ a {
                         }
 
                         a {
+                            display: flex;
+                            gap: 5px;
+                            flex-direction: column;
+                            align-items: center;
                             font-size: 16px;
                             letter-spacing: 1.5px;
                             color: #FAFAFA;
