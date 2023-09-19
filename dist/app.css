@@ -544,7 +544,7 @@ ul li {
 .banner_container .banner_content .swiper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .banner_container .banner_content .swiper:hover {
   border-radius: 180px;
