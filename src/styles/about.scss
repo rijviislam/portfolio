@@ -194,12 +194,13 @@ html {
                 }
 
                 &:nth-child(3) {
-                    background: linear-gradient(-0.10deg, #0b0b0b 35%, rgb(237, 199, 30) 100%);
-                    border-bottom: 1px solid #EDC71E;
-                    border-left: 1px solid #EDC71E;
-                    border-right: 1px solid #EDC71E;
+                    background: linear-gradient(-0.1deg, #111111 35%, rgb(17, 17, 17) 100%);
+                    border-bottom: 1px solid rgb(56, 54, 54);
+                    border-right: 1px solid rgb(56, 54, 54);
+                    border-left: 1px solid rgb(56, 54, 54);
 
                     img {
+
                         border-radius: 40px;
                     }
 
@@ -217,6 +218,7 @@ html {
                     border-bottom: 1px solid #F05033;
                     border-left: 1px solid #F05033;
                     border-right: 1px solid #F05033;
+
                 }
             }
 

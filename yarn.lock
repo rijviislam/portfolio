@@ -4521,11 +4521,6 @@
     "commander" "^2.20.0"
     "source-map-support" "~0.5.20"
 
-"three@^0.156.0":
-  "integrity" "sha512-r6meetGWDk3aYjDRh6NpKuUkzoPlI3yldDQe2SkwCcqTTB5NZn7vKQBUXyMExvlwZShaLmvAbsVWaFzp1rkk3A=="
-  "resolved" "https://registry.npmjs.org/three/-/three-0.156.0.tgz"
-  "version" "0.156.0"
-
 "thunky@^1.0.2":
   "integrity" "sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA=="
   "resolved" "https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz"
