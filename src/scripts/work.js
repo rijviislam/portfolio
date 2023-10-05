@@ -36,10 +36,10 @@ AOS.init();
 
 
 
-const observe = document.querySelectorAll(".work");
+const observeWork = document.querySelectorAll(".work");
 
-const myObserve = new IntersectionObserver((e) => {
-    e.forEach((item => {
+const myObserve = new IntersectionObserver((element) => {
+    element.forEach((item => {
         if (item.isIntersecting) {
             item.target.classList.add('work_active');
         } else {
@@ -48,6 +48,6 @@ const myObserve = new IntersectionObserver((e) => {
     }));
 });
 
-observe.forEach((item) => {
+observeWork.forEach((item) => {
     myObserve.observe(item);
 });
