@@ -1,6 +1,5 @@
 AOS.init();
 
-
 const observeWork = document.querySelectorAll(".work");
 
 const myObserve = new IntersectionObserver((element) => {
