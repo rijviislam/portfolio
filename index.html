@@ -8,14 +8,14 @@
     <title>Home</title>
     <link rel="stylesheet" href="./dist/app.css">
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./node_modules/wow.js/css/libs/animate.css">
+    <!-- <link rel="stylesheet" href="./node_modules/wow.js/css/libs/animate.css"> -->
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 </head>
 
 <body>
@@ -60,7 +60,11 @@
     </section>
     <section class="banner_section" id="section2">
         <div class="banner_container">
-            <div class="banner_title"></div>
+            <div class="banner_title">
+                <p>
+                </p>
+            </div>
+            <span class="banner_color"></span>
             <div class="my_name data-aos=" fade-down" data-aos-easing="linear" data-aos-duration="1500"">Rijvi Islam</div>
             <div class=" my_country" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 Based in Bangladesh
@@ -102,7 +106,7 @@
     </section>
     <section class="about_section" id="section3">
         <div class="about_container">
-            <div class="about_title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="about_title">
                 About me</div>
             <div class="about_dash">
                 <svg width="195" height="13" viewBox="0 0 195 13" xmlns="http://www.w3.org/2000/svg">
@@ -139,16 +143,11 @@
                 <div class="skill_title">My
                     Skills</div>
                 <div class="skill_grid">
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1000"><img src="./src/asset/html.jpg"
-                            alt=""></div>
-                    <div class="skill" data-aos="fade-left" data-aos-duration="1000"><img src="./src/asset/css.jpg"
-                            alt=""></div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1000"><img src="./src/asset/js.jpg"
-                            alt=""></div>
-                    <div class="skill" data-aos="fade-left" data-aos-duration="1000"><img src="./src/asset/sass.jpg"
-                            alt=""></div>
-                    <div class="skill center_item" data-aos="fade-up" data-aos-duration="1000"><img
-                            src="./src/asset/git.jpg" alt=""></div>
+                    <div class="skill  skill_left"><img src="./src/asset/html.jpg" alt=""></div>
+                    <div class="skill  skill_right"><img src="./src/asset/css.jpg" alt=""></div>
+                    <div class="skill  skill_left"><img src="./src/asset/js-1.png" alt=""></div>
+                    <div class="skill  skill_right"><img src="./src/asset/sass.jpg" alt=""></div>
+                    <div class="skill  center_item"><img src="./src/asset/git.jpg" alt=""></div>
                 </div>
             </div>
             <!-- <div class="skill_content" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500"
@@ -207,7 +206,7 @@
                 </div>
             </div> -->
             <div class="work_content">
-                <div class="work" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="work work_left">
                     <div class="work_img"><img src="./src/asset/project1.jpg" alt=""></div>
                     <div class="work_btn_grp">
                         <div class="btn"><a href="#">Visit</a> <i class='bx bx-up-arrow-alt'></i></div>
@@ -231,7 +230,7 @@
 
                         </span></div>
                 </div>
-                <div class="work" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="work work_right">
                     <div class="work_img"><img src="./src/asset/project2.jpg" alt=""></div>
                     <div class="work_btn_grp">
                         <div class="btn"><a href="#">Visit</a> <i class='bx bx-up-arrow-alt'></i></div>
@@ -261,7 +260,7 @@
 
                         </span></div>
                 </div>
-                <div class="work" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="work work_left">
                     <div class="work_img"><img src="./src/asset/project3.jpg" alt=""></div>
                     <div class="work_btn_grp">
                         <div class="btn"><a href="#">Visit</a> <i class='bx bx-up-arrow-alt'></i></div>
@@ -291,7 +290,7 @@
 
                         </span></div>
                 </div>
-                <div class="work" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="work work_right">
                     <div class="work_img"><img src="./src/asset/project4.jpg" alt=""></div>
                     <div class="work_btn_grp">
                         <div class="btn"><a href="#">Visit</a> <i class='bx bx-up-arrow-alt'></i></div>
@@ -356,7 +355,7 @@
             </div>
             <div class="contact_subtitle">Do you want to talk about your project?</div>
             <div class="contact_content">
-                <div class="contact_form" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="contact_form contact contact_left">
                     <form action="">
                         <input type="text" placeholder="Name">
                         <input type="number" placeholder="Phone Number">
@@ -365,7 +364,7 @@
                     </form>
                     <div class="form_btn"><a href="">Submit</a></div>
                 </div>
-                <div class="contact_map" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="contact_map contact contact_right">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7306.5073721512645!2d90.42000824816073!3d23.702633108158558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1693910729216!5m2!1sen!2sbd"
                         width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
@@ -376,7 +375,7 @@
     </section>
 </body>
 <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-<script src="./node_modules/wow.js/dist/wow.min.js"></script>
+<!-- <script src="./node_modules/wow.js/dist/wow.min.js"></script> -->
 <script src="./node_modules/aos/dist/aos.js"></script>
 <script type="module" src="./cursor-effects-master/src/ghostCursor.js"></script>
 <script type="" src="./dist/app.js"></script>

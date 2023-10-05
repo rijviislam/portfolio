@@ -3,3 +3,4 @@ import "./hero";
 import "./banner";
 import "./work";
 import "./about";
+import "./contact";

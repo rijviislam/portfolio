@@ -15,7 +15,7 @@
   \******************************/
 /***/ (() => {
 
-eval("AOS.init();\n\n//# sourceURL=webpack://webpack/./src/scripts/about.js?");
+eval("var observeSkill = document.querySelectorAll(\".skill\");\nvar myObserve = new IntersectionObserver(function (item) {\n  item.forEach(function (element) {\n    if (element.isIntersecting) {\n      element.target.classList.add(\"skill_active\");\n    } else {\n      element.target.classList.remove(\"skill_active\");\n    }\n    ;\n  });\n});\nobserveSkill.forEach(function (e) {\n  myObserve.observe(e);\n});\n\n//# sourceURL=webpack://webpack/./src/scripts/about.js?");
 
 /***/ }),
 
@@ -26,7 +26,17 @@ eval("AOS.init();\n\n//# sourceURL=webpack://webpack/./src/scripts/about.js?");
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! typed.js */ \"./node_modules/typed.js/dist/typed.module.js\");\nnew WOW().init();\nAOS.init();\n\nvar options = {\n  strings: [\"A passionate frontend developer\", \"A passionate frontend developer\"],\n  typeSpeed: 150,\n  backSpeed: 10,\n  startDelay: 1000,\n  loop: true,\n  showCursor: false\n};\nvar typed = new typed_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.banner_title', options);\nvar swiper = new Swiper(\".mySwiper\", {\n  effect: \"cards\",\n  grabCursor: true,\n  loop: true\n  // autoplay: {\n  //     delay: 1000, // Set the delay (in milliseconds) between slides\n  //     disableOnInteraction: false, // Continue autoplay even after user interaction\n  // },\n});\n\n//# sourceURL=webpack://webpack/./src/scripts/banner.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! typed.js */ \"./node_modules/typed.js/dist/typed.module.js\");\nAOS.init();\n\nvar options = {\n  strings: [\"A passionate frontend developer\", \"A passionate frontend developer\"],\n  typeSpeed: 150,\n  backSpeed: 10,\n  startDelay: 1000,\n  loop: true,\n  showCursor: false\n};\nvar typed = new typed_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.banner_title', options);\nvar swiper = new Swiper(\".mySwiper\", {\n  effect: \"cards\",\n  grabCursor: true,\n  loop: true\n  // autoplay: {\n  //     delay: 1000, // Set the delay (in milliseconds) between slides\n  //     disableOnInteraction: false, // Continue autoplay even after user interaction\n  // },\n});\n\n//# sourceURL=webpack://webpack/./src/scripts/banner.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/contact.js":
+/*!********************************!*\
+  !*** ./src/scripts/contact.js ***!
+  \********************************/
+/***/ (() => {
+
+eval("var observerContact = document.querySelectorAll(\".contact\");\nvar observer = new IntersectionObserver(function (element) {\n  element.forEach(function (observeE) {\n    if (observeE.isIntersecting) {\n      observeE.target.classList.add(\"contact_content_active\");\n    } else {\n      observeE.target.classList.remove(\"contact_content_active\");\n    }\n  });\n});\nobserverContact.forEach(function (item) {\n  observer.observe(item);\n});\n\n//# sourceURL=webpack://webpack/./src/scripts/contact.js?");
 
 /***/ }),
 
@@ -47,7 +57,7 @@ eval("var customCursor = document.querySelector(\".custom_cursor\");\nvar intera
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/index.scss */ \"./src/styles/index.scss\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hero */ \"./src/scripts/hero.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_hero__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./banner */ \"./src/scripts/banner.js\");\n/* harmony import */ var _work__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./work */ \"./src/scripts/work.js\");\n/* harmony import */ var _work__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_work__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./about */ \"./src/scripts/about.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n//# sourceURL=webpack://webpack/./src/scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/index.scss */ \"./src/styles/index.scss\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hero */ \"./src/scripts/hero.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_hero__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./banner */ \"./src/scripts/banner.js\");\n/* harmony import */ var _work__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./work */ \"./src/scripts/work.js\");\n/* harmony import */ var _work__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_work__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./about */ \"./src/scripts/about.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./contact */ \"./src/scripts/contact.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_contact__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\n//# sourceURL=webpack://webpack/./src/scripts/index.js?");
 
 /***/ }),
 
@@ -57,7 +67,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*****************************/
 /***/ (() => {
 
-eval("new WOW().init();\nAOS.init();\nvar swiper = new Swiper(\".mySwiper6\", {\n  direction: \"vertical\",\n  grabCursor: true,\n  effect: \"creative\",\n  loop: true,\n  creativeEffect: {\n    prev: {\n      shadow: true,\n      translate: [0, 0, -200]\n    },\n    next: {\n      translate: [0, \"100%\", 0]\n    }\n  },\n  pagination: {\n    el: \".swiper-pagination\",\n    clickable: true\n  },\n  navigation: {\n    nextEl: \".swiper-button-next\",\n    prevEl: \".swiper-button-prev\"\n  }\n});\n\n// Add scroll behavior to control the Swiper slider\ndocument.addEventListener(\"mousewheel\", function (e) {\n  if (e.deltaY > 0) {\n    swiper.slideNext(); // Scroll down, go to the next slide\n  } else {\n    swiper.slidePrev(); // Scroll up, go to the previous slide\n  }\n});\n\n//# sourceURL=webpack://webpack/./src/scripts/work.js?");
+eval("AOS.init();\n\n// var swiper = new Swiper(\".mySwiper6\", {\n//     direction: \"vertical\",\n//     grabCursor: true,\n//     effect: \"creative\",\n//     loop: true,\n//     creativeEffect: {\n//         prev: {\n//             shadow: true,\n//             translate: [0, 0, -200],\n//         },\n//         next: {\n//             translate: [0, \"100%\", 0],\n//         },\n//     },\n//     pagination: {\n//         el: \".swiper-pagination\",\n//         clickable: true,\n//     },\n//     navigation: {\n//         nextEl: \".swiper-button-next\",\n//         prevEl: \".swiper-button-prev\",\n//     },\n// });\n\n// // Add scroll behavior to control the Swiper slider\n// document.addEventListener(\"mousewheel\", function (e) {\n//     if (e.deltaY > 0) {\n//         swiper.slideNext(); // Scroll down, go to the next slide\n//     } else {\n//         swiper.slidePrev(); // Scroll up, go to the previous slide\n//     }\n// });\n\nvar observe = document.querySelectorAll(\".work\");\nvar myObserve = new IntersectionObserver(function (e) {\n  e.forEach(function (item) {\n    if (item.isIntersecting) {\n      item.target.classList.add('work_active');\n    } else {\n      item.target.classList.remove('work_active');\n    }\n  });\n});\nobserve.forEach(function (item) {\n  myObserve.observe(item);\n});\n\n//# sourceURL=webpack://webpack/./src/scripts/work.js?");
 
 /***/ }),
 

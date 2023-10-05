@@ -1,4 +1,3 @@
-new WOW().init();
 AOS.init();
 
 import Typed from 'typed.js';
@@ -10,8 +9,8 @@ const options = {
     loop: true,
     showCursor: false,
 };
-
 const typed = new Typed('.banner_title', options);
+
 
 var swiper = new Swiper(".mySwiper", {
     effect: "cards",

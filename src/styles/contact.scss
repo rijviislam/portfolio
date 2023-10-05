@@ -126,6 +126,24 @@ ul li {
                 border-radius: 20px;
             }
         }
+
+        .contact {
+            opacity: 0;
+            transition: all 2s ease-in-out;
+        }
+
+        .contact_left {
+            transform: translateX(-20%);
+        }
+
+        .contact_right {
+            transform: translateX(20%);
+        }
+
+        .contact_content_active {
+            opacity: 1;
+            transform: translateX(0%);
+        }
     }
 
 

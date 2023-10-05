@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: none;
-
 }
 
 a {
@@ -105,8 +104,8 @@ ul li {
             box-shadow: 1px 9px 5px 0px rgba(0, 0, 0, 0.33);
             -webkit-box-shadow: 1px 9px 5px 0px rgba(0, 0, 0, 0.33);
             -moz-box-shadow: 1px 9px 5px 0px rgba(0, 0, 0, 0.33);
-
-
+            opacity: 0;
+            transition: all 2s ease-in-out;
 
             .work_img {
                 width: 500px;
@@ -177,5 +176,19 @@ ul li {
             }
 
         }
+
+        .work_left {
+            transform: translateX(-100%);
+        }
+
+        .work_right {
+            transform: translateX(100%);
+        }
+
+        .work_active {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+
     }
 }
